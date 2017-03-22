@@ -4,8 +4,8 @@ public class AccountTest {
 
    public static void main(String[] args) {
       // TODO Auto-generated method stub
-      CheckingAccount account1 = new CheckingAccount(100, 1000000, 0.01, 0.07);
-      CheckingAccount account2 = new CheckingAccount(100, 1000000, 0.01, 0.07);
+      CheckingAccount account1 = new CheckingAccount(100, 100, 0.01, 0.07);
+      CheckingAccount account2 = new CheckingAccount(100, 100, 0.01, 0.07);
       
       Scanner sc = new Scanner(System.in);
       
