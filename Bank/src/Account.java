@@ -1,26 +1,31 @@
 public class Account {
-   private float money;
+   private double balance;
    
-   public void credit(float m) {
-      this.money += m;
+   public void credit(double m) {
+      this.balance += m;
       
    }
    
-   public void debit(float m) {
-      if (this.money < m) {
+   public void debit(double m) {
+      if (this.balance < m) {
          System.out.println("출금 가능 금액 초과.");
          return;
       }
       
-      this.money -= m;
+      this.balance -= m;
    }
    
-   public float balance() {
-      return money;
+   public double getBalance() {
+      return balance;
    }
 
    
-   public Account(float m) {
-      this.money = m;
+   public Account(double m) {
+      this.balance = m;
    }
+   
+   protected void setBalance(double m) {
+	   this.balance = m;
+   }
+	
 }
