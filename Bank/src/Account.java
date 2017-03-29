@@ -1,4 +1,4 @@
-public class Account {
+public abstract class Account {
    private double balance;
    
    public void credit(double m) {
@@ -27,5 +27,7 @@ public class Account {
    protected void setBalance(double m) {
 	   this.balance = m;
    }
-	
+   
+   public abstract double getWithdrawableAccount();
+   public abstract void passTime(int time);
 }
